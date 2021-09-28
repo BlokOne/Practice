@@ -83,7 +83,7 @@ h3 {
 .main-header {
 	width: 1600px;  
 	height: 895px;
-	background-image: url(../img/headerall.png);
+	background-image: url('../img/headerall.png');
 	margin: 0 auto;
 }
 
@@ -150,6 +150,8 @@ h3 {
 	background-color: #fe504f;
 	border: none;
 	border-radius: 3px;
+	
+
 }
 
 .login-link {
@@ -182,7 +184,7 @@ h3 {
 }
 
 .contactUs {
-	background-image: url(../img/contactus.png);
+	background-image: url('../img/contactus.png');
 	width: 1600px;
 	height: 400px;
 	margin: 0 auto;
@@ -321,7 +323,7 @@ h3 {
 .video {
 	width: 1600px;
 	height: 400px;
-	background-image: url(../img/video.jpg);
+	background-image: url('../img/video.jpg');
 	margin: 0 auto;
 	padding-top: 91px;
 	margin-bottom: 80px;
@@ -414,7 +416,7 @@ h3 {
 
 .contactForm {
 	width: 1600px;
-	background-image: url(../img/Form.jpg);
+	background-image: url('../img/Form.jpg');
 	height: 816px;
 	margin: 0 auto; 
 	padding-top: 100px;
