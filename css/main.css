@@ -4,7 +4,10 @@
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	
 }
+
+
 
 .mainbody {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -12,11 +15,16 @@
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
-
 	min-height: 100%;
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
 	align-content: start;
+	
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -99,7 +107,7 @@ h3 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding-top: 71px;
-	padding-bottom: 138px;
+	margin-bottom: 138px;
 	
 }
 
@@ -113,14 +121,20 @@ h3 {
 
 .site-navigation a {
 	color: white;
-	
+	text-decoration: none;
+	transition: border 0.15s ease;
 }
 
 .site-navigation a:hover {
-	text-decoration: underline;
 	text-decoration: none;
   	border-bottom: 3px solid #fe504f;
   	padding-bottom: 9px;
+}
+
+.activepage {
+	text-decoration: none;
+	border-bottom: 3px solid #fe504f;
+	padding-bottom: 9px;
 }
 
 .nameOfAgency {
@@ -140,6 +154,8 @@ h3 {
 	padding-bottom: 50px;
 }
 
+
+
 .yourprofit {
 	color: white;
 	font-weight: 700;
@@ -150,8 +166,9 @@ h3 {
 	background-color: #fe504f;
 	border: none;
 	border-radius: 3px;
-	
-
+	position: absolute;
+	right: 23px;
+	top: 292px;
 }
 
 .login-link {
@@ -162,9 +179,22 @@ h3 {
 
 .features-list {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	column-gap: 111px;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 90px;
 	margin-bottom: 76px;
+	grid-row-gap: 60px;
+}
+
+
+
+.features-list h3 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 8px;
+}
+
+.features-list img {
+	margin-bottom: 16px;
 }
 
 .feature-item {
@@ -173,14 +203,17 @@ h3 {
 }
 
 .feature-item p{
-	color: #aeaeae
+	color: #aeaeae;
+	line-height: 1.7em;
 }
 
 .hr-feature {
 	width: 61px;
 	border: none;
 	border-top: 3px solid #fe504f;
-	
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 18px;
 }
 
 .contactUs {
@@ -188,17 +221,23 @@ h3 {
 	width: 1600px;
 	height: 400px;
 	margin: 0 auto;
-	padding-top: 110px;
 	margin-bottom: 81px;
-
+	
 }
 
 .contact {
+	margin: 0;
+	padding-top: 110px;
 	color: white;
 	font-size: 34px;
 	font-weight: 700;
+	margin-bottom: 50px;
 }
 
+.btncon {
+	display: block;
+	margin: 0 auto;
+}
 
 .chapter {
 	text-align: center;
@@ -216,6 +255,23 @@ h3 {
 	margin-bottom: 77px;
 }
 
+/*.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+} */
+
+.slide.active {
+	display: block;
+}
+
+.slide {
+	display: none;
+}
 
 .chapterDescription {
 	font-size: 16px;
@@ -227,7 +283,7 @@ h3 {
 .whatClients {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 60px;
+	column-gap: 50px;
 }
 
 .whatWeDo p {
@@ -253,7 +309,10 @@ h3 {
 	margin-bottom: 30px;
 }
 
-
+.iconCompany {
+	width: 185px;
+	height: 185px;
+}
 
 .slider {
     display: flex;
@@ -262,17 +321,19 @@ h3 {
 	margin-bottom: 30px;
 }
 
-.line.active {
-	background-color: #fe504f; 
-}
-
-.line {
+.dot {
     width: 35px;
     height: 4px;
     background-color: #aeaeae; 
     margin-right: 5px;
     cursor: pointer;
 }
+
+.dot.active {
+	background-color: #fe504f; 
+}
+
+
 
 .photo {
 	display: grid;
@@ -365,21 +426,42 @@ h3 {
 	margin-bottom: 30px;
 }
 
+.news {
+	display: inline;
+}
 
 
 .wrapperNews {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 900px 300px ;
 	column-gap: 0;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
+
 }
 
 .wrapperNews hr {
 	width: 50px;
 	border: none;
 	border-top: 3px solid #fe504f;
-	margin-left: 30px;
+	margin-bottom: 17px;
+	
 }
+
+.news1  {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.news2 {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.news3 {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
 
 .wrapperNews h4 {
 	margin: 0;
@@ -388,14 +470,15 @@ h3 {
 	color: #fe504f;
 	margin-bottom: 15px;
 	width: 240px;
-	padding-top: 30px;
-	padding-left: 30px;
+
 }
 
 .newsOffer {
-	width: 300px;
-	height: 300px;
+	padding: 30px 30px 30px 30px;
+	width: 240px;
+	height: 240px;
 	background-color: #343434;
+	position: relative;
 	
 }
 
@@ -404,22 +487,19 @@ h3 {
 	font-size: 12px;
 	font-weight: 400;
 	color: white;
-	padding-left: 30px;
-	padding-right: 45px;
 	line-height: 1.7em;
 }
 
-.textnews span {
-	color: #fe504f;
-	font-style: italic;
-}
+
 
 .contactForm {
 	width: 1600px;
+	height: 916px;
 	background-image: url('../img/Form.jpg');
-	height: 816px;
+	height: 716px;
 	margin: 0 auto; 
-	padding-top: 100px;
+	height: 715px;
+	
 }
 
 .info hr {
@@ -443,7 +523,7 @@ h3 {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.4em;
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .wrpinfo {
@@ -458,6 +538,7 @@ h3 {
 	grid-template-columns: 1fr 1fr;
 	width: 1200px;
 	margin: 0 auto;
+	padding-top: 100px;
 }
 
 .wrpinfo p {
@@ -477,9 +558,11 @@ h3 {
 
 .form {
 	margin-left: 100px;
+	
 }
 
 .btnform {
+	padding: 0;
 	width: 130px;
 	height: 40px;
     background-color: #fe504f;
@@ -487,41 +570,60 @@ h3 {
     color: #ffffff;
     border: none; 
     border-radius: 100px;
+	margin-bottom: 30px;
 }
 
 .form h2 {
+	height: 24px;
+	padding: 0;
 	margin: 0;
 	color: #fe504f;
 	font-size: 24px;
 	font-weight: 700px;
 	text-align: start;
-	padding-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 .form hr {
 	width: 51px;
 	border: none;
 	border-top: 3px solid #fe504f;
-	padding-bottom: 26px;
+	margin-bottom: 26px;
 }
 
 .inputform {
+	color: white;
 	width: 442px;
 	height: 42px;
 	border: 1px solid #aeaeae;
 	background: transparent;
 	margin-bottom: 15px;
+	text-indent: 16px;
+	font-size: 14px;
 }
 
 .inputbig {
-	height: 190px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	resize: none;
+	border: 1px solid #aeaeae;
+	color: white;
+	padding-top: 15px;
+	text-indent: 16px;
+	width: 442px;
+	height: 160px;
+	margin-bottom: 39px;
+	text-align: start;
+	background: transparent;
 }
 
 footer {
 	height: 100px;
 	background-color: #343434;
-	width: 1600px;
+	width: 100%;
 	margin: 0 auto;
+	min-width: 100%;
 }
 
 .footer {
@@ -551,4 +653,133 @@ footer {
 .social-btn {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.newsbody {
+	background-image: url(/img/bgnews.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.header {
+	position: relative;
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.yourprofitnews {
+	color: white;
+	font-weight: 700;
+	font-size: 12px;
+	display: inline;
+	width: 90px;
+	height: 35px;
+	background-color: #fe504f;
+	border: none;
+	border-radius: 3px;
+	position: absolute;
+	right: 23px;
+	top: 52px;
+
+}
+.navigationNews {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 77px;
+	margin-bottom: 60px;
+}
+
+.H1News {
+	padding: 0;
+	margin: 0;
+	font-size: 60px;
+	font-weight: 700px;
+	color: white;
+	text-align: center;
+	margin-bottom: 74px;
+
+}
+
+.search {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-bottom: 6px;
+	
+}
+
+.searchline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+	margin-right: 6px;
+}
+
+.search input {
+	outline: 6px solid #343434;
+	border: 1px solid #fe504f;
+	height: 26px;
+	width: 240px;
+	background: #343434;
+	color: white;
+	margin-right: 6px;
+}
+
+.search button {
+	border: none;
+	width: 42px;
+	background-color:#fe504f;
+	outline: 6px solid #343434;
+}
+
+.allnews {
+	margin-bottom: 60px;
+}
+
+.btnSM {
+	display: flex;
+	justify-self: center;
+	margin-bottom: 60px;
+}
+
+.btnShowMore {
+	justify-self: center;
+	width: 370px; 
+	height: 60px;
+	background-color: #343434;
+	color: #fe504f;
+	border-radius: 0%;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	margin: 0 auto;
+}
+
+.imgbig {
+	width: 600px;
+	height: 300px;
+}
+
+.imgsmall {
+	width: 300px;
+	height: 300px;
+}
+
+.datanews {
+	color: #fe504f;
+	font-style: italic;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
 }
