@@ -186,6 +186,18 @@ h3 {
 	top: 292px;
 }
 
+.login-link::after {
+	content:"";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background-color: #fe504f;
+	transform: rotate(45deg);
+	right: 0; 
+	margin-right: -7px;
+
+}
+
 .login-link {
 	text-decoration: none;
 	color: white;
@@ -395,9 +407,11 @@ h3 {
 	margin: 0 auto;
 	padding-top: 91px;
 	margin-bottom: 80px;
+
 }
 
-.btn-play {
+.btnplay {
+	border: none;
 	width: 92px;
 	height: 92px;
 	background-color: #fe504f;
@@ -1138,4 +1152,16 @@ footer {
 
 .fourthlevel {
 	margin-left: 180px;
+}
+
+
+
+.youtube {
+	display: none;
+	margin-top: -100px;
+}
+
+.plug {
+	display: block;
+
 }

@@ -1,7 +1,24 @@
 const   slides = document.querySelectorAll('.slide');
         dots = document.querySelectorAll('.dot');
-       
-let index = 0;
+        btnplay = document.getElementById('btnplay');
+        youtube = document.getElementById('youtube');
+        plug = document.getElementById('plug');
+
+
+
+btnplay.addEventListener("click", () => {
+    youtube.style.display = "block" 
+    plug.style.display = "none"
+});
+        
+
+
+
+
+
+
+
+    let index = 0;
 
 
 
