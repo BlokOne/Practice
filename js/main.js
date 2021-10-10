@@ -12,13 +12,7 @@ btnplay.addEventListener("click", () => {
 });
         
 
-
-
-
-
-
-
-    let index = 0;
+let index = 0;
 
 
 
@@ -61,3 +55,8 @@ const prepareCurrentSlide = ind => {
     activeSlide(index);
     activeDot(index);
 }
+
+
+localStorage.setItem('test', 5);
+
+alert(localStorage.getItem('test'));
