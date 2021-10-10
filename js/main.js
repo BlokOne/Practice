@@ -56,7 +56,3 @@ const prepareCurrentSlide = ind => {
     activeDot(index);
 }
 
-
-localStorage.setItem('test', 5);
-
-alert(localStorage.getItem('test'));
