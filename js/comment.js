@@ -70,7 +70,7 @@ btncomment.addEventListener("click", () =>
   );
   sumComments.querySelector('span').innerHTML = comments.length;
   addcomment();
-  
+  clearsky();
 });
 
 
@@ -80,8 +80,13 @@ function addcomment() {
   const newcomment = commentpost.cloneNode(true);
   newcomment.querySelector('h5').innerHTML = document.querySelector("input[name='example']").value;
   newcomment.querySelector('strong').innerHTML = document.querySelector("input[name='comment']").value;
-  newcomment.querySelector('time').innerHTML = now ;
+  newcomment.querySelector('time').innerHTML = 'now' ;
   document.getElementById('sumComments').prepend( newcomment );
+}
+
+function clearsky() {
+  document.getElementById('Name').value="";
+  document.getElementById('comment').value="";
 }
 
 
