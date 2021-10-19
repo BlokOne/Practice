@@ -44,7 +44,7 @@
     <main class="mainbody">
     <section>
         <div class="containerPost">
-            <div class="textpost">
+            <div class="textpost" id="textpost">
                 <p>
                     Customer expectations for banks, wealth management companies and insurers are on the rise. In 2013, more than half of consumer bank interactions 
                     around the world took place through online or mobile channels, according to Bain & Company customer surveys. Include ATMs and the share of electronic, 
@@ -101,165 +101,25 @@
     
     <section class="areaComment">
         <div class="containerPost">
-            <div class="sumComments">
-                <h3 class="linesum">
-                    6 Comments
+            <div class="sumComments" >
+                <h3 class="linesum" id="linesum">
+                   <span>0</span> 
+                   Comments
                 </h3>
             </div>
-            <div class="subcomment">
-                <textarea name="Yout comment" placeholder="Your comment" class="Yourcomment" required></textarea>
-                <button type="submit" class="btn-submit">SUBMIT COMMENT</button>
+            
+            <div class="subcomment" >
+                <form action="#" class="formpost">
+                    <input type="name" placeholder="Name" name="example" class="inputform comment" id="Name" required>
+                    <div class="subcomments">
+                        <input name="comment" placeholder="Your comment" class=" Yourcomment" id="comment"  required></textarea>
+                        <button  class="btn-submit" id="btnYourcomment" type='button'>SUBMIT COMMENT</button>
+                    </div>
+                </form> 
             </div>
-            <div class="comments">
-                <div class="maincomment firstLevel">
-                    <div class="userid" id="1">
-                        <div class="photouser"><img src="img/photoUser/cap.jpg" alt="cap"></div>
-                            <div class="wrcomment">
-                                <div class="commentinfo">
-                                    <div class="Name">
-                                        <p>Cap</p>
-                                    </div>
-                                    <p>/</p>
-                                    <div class="timecomment">
-                                        <p>2 hours ago</p>
-                                    </div>
-                                    <p>/</p>
-                                    <a href="#">replay</a>
-                                </div>
-                                <div class="comment">
-                                    <p>And you need to focus on the problem, Mr Stark.</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="maincomment secondlevel">
-                    <div class="userid" id="2">
-                        <div class="photouser"><img src="img/photoUser/Tony.jpg" alt="Tony"></div>
-                            <div class="wrcomment">
-                                <div class="commentinfo">
-                                    <div class="Name">
-                                        <p>Tony</p>
-                                    </div>
-                                    <p>/</p>
-                                    <div class="timecomment">
-                                        <p>2 hours ago</p>
-                                    </div>
-                                    <p>/</p>
-                                    <a href="#">replay</a>
-                                </div>
-                                <div class="comment">
-                                    <p>Do you think I'm not? Why did Fury call us in? Why now? Why not before? What isn't he telling us? I can't do the equation unless I have all the variables.</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="maincomment thirdLevel">
-                    <div class="userid" id="1">
-                        <div class="photouser"><img src="img/photoUser/cap.jpg" alt="cap"></div>
-                            <div class="wrcomment">
-                                <div class="commentinfo">
-                                    <div class="Name">
-                                        <p>Cap</p>
-                                    </div>
-                                    <p>/</p>
-                                    <div class="timecomment">
-                                        <p>1 hours ago</p>
-                                    </div>
-                                    <p>/</p>
-                                    <a href="#">replay</a>
-                                </div>
-                                <div class="comment">
-                                    <p>You think Fury's hiding something?</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="maincomment fourthlevel">
-                    <div class="userid" id="2">
-                        <div class="photouser"><img src="img/photoUser/Tony.jpg" alt="Tony"></div>
-                            <div class="wrcomment">
-                                <div class="commentinfo">
-                                    <div class="Name">
-                                        <p>Tony</p>
-                                    </div>
-                                    <p>/</p>
-                                    <div class="timecomment">
-                                        <p>1 hours ago</p>
-                                    </div>
-                                    <p>/</p>
-                                    <a href="#">replay</a>
-                                </div>
-                                <div class="comment">
-                                    <p>He's a spy. Captain, he's 'the' spy. His secrets have secrets.</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="maincomment firstLevel">
-                    <div class="userid" id="0">
-                        <div class="photouser"><img src="img/photoUser/ww.jpg" alt="WW"></div>
-                            <div class="wrcomment">
-                                <div class="commentinfo">
-                                    <div class="Name">
-                                        <p>Walter White</p>
-                                    </div>
-                                    <p>/</p>
-                                    <div class="timecomment">
-                                        <p>6 hours ago</p>
-                                    </div>
-                                    <p>/</p>
-                                    <a href="#">replay</a>
-                                </div>
-                                <div class="comment">
-                                    <p>Now, say my name.</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="maincomment secondlevel">
-                    <div class="userid" id="5">
-                        <div class="photouser"><img src="img/photoUser/man.JPG" alt="Man"></div>
-                            <div class="wrcomment">
-                                <div class="commentinfo">
-                                    <div class="Name">
-                                        <p>Man</p>
-                                    </div>
-                                    <p>/</p>
-                                    <div class="timecomment">
-                                        <p>5 hours ago</p>
-                                    </div>
-                                    <p>/</p>
-                                    <a href="#">replay</a>
-                                </div>
-                                <div class="comment">
-                                    <p>You're Heisenberg.</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="maincomment thirdLevel">
-                    <div class="userid" id="0">
-                        <div class="photouser"><img src="img/photoUser/ww.jpg" alt="WW"></div>
-                            <div class="wrcomment">
-                                <div class="commentinfo">
-                                    <div class="Name">
-                                        <p>Walter White</p>
-                                    </div>
-                                    <p>/</p>
-                                    <div class="timecomment">
-                                        <p>4 hours ago</p>
-                                    </div>
-                                    <p>/</p>
-                                    <a href="#">replay</a>
-                                </div>
-                                <div class="comment">
-                                    <p>You're goddamn right.</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
+            <div id="sumComments">
+           
 
-            </div>
         </div>
     </section>
     <footer>
@@ -288,8 +148,33 @@
                 </div>
         </div>
     </footer>
+    <section class="none">
+        <div class="userid" id="commentpost">
+            <div class="photouser"></div>
+                <div class="wrcomment">
+                    <div class="commentinfo">
+                        <div class="Name" id="nameuser">
+                            <h5>Cap</h5>
+                        </div>
+                        <span>/</span>
+                        <div class="timecomment" id="timecomment">
+                            <time>1</time>
+                            
+                        </div>
+                        <span>/</span>
+                        <a href="#">replay</a>
+                    </div>
+                    <div class="comment" id="commenttext">
+                        <strong>And you need to focus on the problem, Mr Stark.</strong>
+                    </div>
+                </div>
+        </div>
+    </section>
     </main>
+
+<script src="./js/comment.js"></script>
 
 </body>
 
 </html>
+

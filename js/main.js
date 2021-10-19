@@ -3,6 +3,7 @@ const   slides = document.querySelectorAll('.slide');
         btnplay = document.getElementById('btnplay');
         youtube = document.getElementById('youtube');
         plug = document.getElementById('plug');
+ 
 
 
 
@@ -55,4 +56,5 @@ const prepareCurrentSlide = ind => {
     activeSlide(index);
     activeDot(index);
 }
+
 

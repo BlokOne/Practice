@@ -1052,9 +1052,26 @@ footer {
 
 .subcomment {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr ;
 	grid-gap: 30px;
-	margin-bottom: 27px;
+	
+}
+
+.subcomment input{
+	width: 400px;
+	height: 31px;
+	color: #343434;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.subcomments {
+	display: flex;
+	justify-content: space-between;
+}
+
+.comment {
+	width: 1000px;
 }
 
 .Yourcomment {
@@ -1065,10 +1082,12 @@ footer {
 	font-size: 18px;
 	line-height: 1em;
 	resize: none;
-	border: 2px solid #aeaeae;
+	border: 1px solid #aeaeae;
 	color: black;
 	padding-top: 5px;
+	margin-bottom: 15px;
 	text-indent: 16px;
+	font-size: 14px;
 	width: 923px;
 	height: 31px;
 	text-align: start;
@@ -1082,6 +1101,7 @@ footer {
 	border: none;
 	font-size: 12px;
 	color: #fd6041;
+	cursor: pointer;
 }
 
  .photouser {
@@ -1097,11 +1117,15 @@ footer {
 	display: grid;
 	grid-template-columns: 100px 1fr;
 	grid-gap: 15px;
+	margin-bottom: 15px;
+
 }
 
+
+
 .timecomment {
-	display: inline;
-	white-space: nowrap;
+	display: flex;
+	
 }
 
 .wrcomment {
@@ -1122,6 +1146,30 @@ footer {
 	font-weight: 700;
 }
 
+.commentinfo span {
+	margin-right: 15px;
+	font-size: 14px;
+	color: black;
+	font-weight: 700;
+}
+
+.commentinfo time {
+	margin-right: 15px;
+	font-size: 14px;
+	color: black;
+	font-weight: 700;
+}
+
+.commentinfo h5 {
+	margin: 0;
+	padding: 0;
+	margin-right: 15px;
+	font-size: 14px;
+	color: black;
+	font-weight: 700;
+}
+
+
 .commentinfo a {
 	color: black;
 	font-size: 14px;
@@ -1129,7 +1177,8 @@ footer {
 	font-weight: 700;
 }
 
-.comment p {
+.comment strong {
+	font-weight: 400;
 	color: #9e9e9e;
 	font-size: 14px;
 	line-height: 1.4em;
@@ -1165,3 +1214,16 @@ footer {
 
 }
 
+.userinfo {
+	display: grid;
+	grid-template-columns:min-content min-content min-content;
+	column-gap: 15px;
+}
+
+.commentstandrt {
+	display: grid;
+}
+
+.none {
+	display: none;
+}
